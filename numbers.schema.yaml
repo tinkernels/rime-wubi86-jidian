@@ -21,6 +21,9 @@ schema:
   description: 快捷输入大写数字
 
 switches:
+  - name: ascii_mode
+    reset: 1
+    states: [ 中文, 英文 ]
   - name: full_shape
     states: [ 壹贰叁, 一二三 ]
 

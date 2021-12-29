@@ -20,7 +20,6 @@ patch:
     page_size: 5                    # 候选词数量
   switcher:
     hotkeys:        # 弹出菜单的快捷键
-      - "Control+0"
       - "Shift+Control+0"
     abbreviate_options: true
     caption: "【 输入法设置 】"
@@ -115,12 +114,12 @@ patch:
       "~": "～"
     half_shape: # 半角符号
       "!": {commit: "！"}
-      "\"": {pair: ["“", "”"]}
+      "\"": {pair: ["「", "」"]}
       "#": "#"
       "$": "￥"
       "%": ["%", "％", "°", "℃"]
       "&": "&"
-      "'": {pair: ["‘", "’"]}
+      "'": "'"
       "(": "（"
       ")": "）"
       "*": ["·","×"]
@@ -131,9 +130,9 @@ patch:
       "/": {commit: "、"}
       ":": {commit: "："}
       ";": {commit: "；"}
-      "<": {commit: "《"}
+      "<": {commit: "『"}
       "=": "="
-      ">": {commit: "》"}
+      ">": {commit: "』"}
       "?": {commit: "？"}
       "@": "@"
       "[": {commit: "【"}
