@@ -6,15 +6,13 @@
 
 Rime 是个输入法集合，涵盖常用的三个平台 Windows、macOS、Linux，三个平台对应的输入法如上图。
 
-该输入法具有高度可定制化的特性，输入法通过读取不同的配置文件，来实现不同输入方式：全拼、双拼、五笔、仓颉，不同的输入习惯：二三候选、回车清码、z键拼音反查等等。
+该输入法具有高度可定制化的特性，输入法通过读取不同的配置文件，来实现不同输入方式：全拼、双拼、五笔、仓颉，设置不同的输入习惯：二三候选、回车清码、z键拼音反查等等。
 
-正因为如此高的可自定义性，拉高了它的使用门槛。为了让更多的五笔用户更称心通过 Rime 输入五笔，就有了这个86五笔输入方案，它的输入习惯比较接近于之前的极点五笔，码表也是使用的极点五笔的码表。
+正因为如此高的可自定义性，拉高了它的使用门槛。为了让更多的五笔用户更省心地使用 Rime 输入五笔，就有了这个86五笔输入方案，它的输入习惯比较接近于之前的极点五笔，码表也是使用的极点五笔的码表。
 
-由于三个平台使用的码表配置文件是一样的，所以能够在多个平台间保持同一种输入习惯，打起字来会比较舒服。
+由于三个平台使用的码表配置文件是一样的，所以能够在多个平台间保持同一种输入习惯，打起字来也会比较舒服。
 
-该码表词条不是很多，很多近期的词语可能会没有，需要自己添加，可以使用配套工具 [五笔词条工具](https://github.com/KyleBing/wubi-dict-editor) 来完成词条的添加。
-
-> 好词库的特点是：减少特殊词的数量，增加通用词的频率。
+该码表词条不是很多，很多专业性的词语可能会没有，需要自己添加，可以使用配套工具 [五笔词条工具](https://github.com/KyleBing/wubi-dict-editor) 来完成词条的添加。
 
 
 ## 二、不同平台的输入法外观
@@ -22,7 +20,7 @@ Rime 是个输入法集合，涵盖常用的三个平台 Windows、macOS、Linux
 
 __macOS__
 
-<img width="435" alt="Screen Shot 2020-12-09 at 12 15 57" src="https://user-images.githubusercontent.com/12215982/101584309-56833e80-3a18-11eb-9b83-a43204ad363c.png">
+<img width="330" alt="Screen Shot 2020-12-09 at 12 15 57" src="https://user-images.githubusercontent.com/12215982/149726120-1a066937-551c-4a43-b2e8-b081f6366c9d.png">
 
 __Windows__
 
@@ -34,11 +32,11 @@ patch:
     color_scheme: WhiteAqua  # 匹配正文的颜色方案，对应正文的颜色方案名
 ```
 
-<img width="485" src="https://user-images.githubusercontent.com/12215982/139873356-1a0c91a9-7343-4dd8-910b-c8f2f7003365.png">
+<img width="500" src="https://user-images.githubusercontent.com/12215982/139873356-1a0c91a9-7343-4dd8-910b-c8f2f7003365.png">
 
 __Linux: Ubuntu__
 
-<img width="350" alt="skin-ubuntu" src="https://user-images.githubusercontent.com/12215982/131607073-0b3dfe0e-bfc8-4be0-91c7-b304702acdda.png">
+<img width="250" alt="skin-ubuntu" src="https://user-images.githubusercontent.com/12215982/131607073-0b3dfe0e-bfc8-4be0-91c7-b304702acdda.png">
 
 
 
@@ -91,10 +89,9 @@ __Linux: Ubuntu__
 ### 2. 小狼毫（Windows）
 
 Windows 中的配置方法：
-1. 点击<kbd>开始</kbd>
-2. 打开刚刚安装的小狼毫输入法程序目录，打开<kbd>用户文件夹</kbd>
-3. 把该项目中的文件复制到里面
-4. 点击开始菜单中的<kbd>部署</kbd>即可
+1. 右击状态栏中的小狼毫输入法图标，选择 <kbd>用户文件夹</kbd>
+2. 把该项目中的文件复制到里面
+3. 右击状态栏中的小狼毫输入法图标，选择 <kbd>重新部署</kbd> 即可
 
 
 ### 3. ibus-rime (Ubuntu)
@@ -133,10 +130,11 @@ ubuntu 的配置文件目录在 `~/.config/ibus/rime/`
 具体可以看这个文件内的说明： [wubi86_jidian_trad.schema.yaml](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/wubi86_jidian_trad.schema.yaml)
 > 以不切换文字的形式使用只是暂时转繁，换个程序就会恢复简体了。如果你想一直使用简入繁出就选择 「简入繁出」这个方案
 
-### 7. 系统 `时间` 和 `日期`
+### 7. 系统 `时间`、`日期` 和 `星期`
 输入对应词，获取当前日期和时间
 - `date` 输出日期，格式 `2019年06月19日` `2019-06-19`
 - `time` 输出时间，格式 `10:00` `10:00:00`
+- `week` 输出星期，格式 `周四` `星期四`
 
 ### 8. 支持大写数字输入：壹贰叁肆伍陆
 本库中包含一个可以输入大写数字的方案，名叫 `大写数字`，呼出菜单选择该方案即可。
@@ -161,7 +159,7 @@ ubuntu 的配置文件目录在 `~/.config/ibus/rime/`
 
 ### 1. 回车清码
 默认是开启的
-打开 `default.custom.yaml` 文件，找到下面这行，在前面添加 `#` 即可
+想要关闭，打开 `default.custom.yaml` 文件，找到下面这行，在前面添加 `#` 即可，如下
 
 ```yaml
       # 回车清码
@@ -169,13 +167,14 @@ ubuntu 的配置文件目录在 `~/.config/ibus/rime/`
 ```
 
 ### 2. 空码时自动清码
-默认配置是不会自动清的，修改文件  `wubi86_jidian.schema.yaml` 中 `speller` 这一栏，将前面的 `#` 号删除即可
+默认配置是不会自动清的，想要自动清码，修改文件  `wubi86_jidian.schema.yaml` 中 `speller` 这一栏，将前面的 `#` 号删除即可，如下
 ```yaml
   auto_clear: max_length                # 空码时自动清空
 ```
 
 ### 3. 编码提示
-默认是关闭的，可以手动开启，打开 `wubi86_jidian.schema.yaml` 编辑 `translator` -> `comment_format` 改成如下即可
+默认是关闭的，
+想要开启，打开 `wubi86_jidian.schema.yaml` 编辑 `translator` -> `comment_format` 改成如下即可
 
 ```yaml
   comment_format: 
@@ -183,7 +182,7 @@ ubuntu 的配置文件目录在 `~/.config/ibus/rime/`
 ```
 
 ### 4. 关于手动造词功能
-一种方式是，手动往词库中添加词组，并重新布署
+一种方式是，手动往词库中添加词组，并重新部署
 > 这个操作要注意的是词组与编码之间的符号是`tab`，写错了这个词是不会被识别的
 
 另一种是使用工具。Rime 默认是没有词条管理工具的，所以就写了一个工具，基本满足日常需求，如果有什么其它需要的功能，可以跟我说。
@@ -238,6 +237,14 @@ __本库 Wiki__
 - [x] [.schema.yaml 详解](https://github.com/KyleBing/rime-wubi86-jidian/wiki/Schema.yaml-%E8%AF%A6%E8%A7%A3)
 - [x] [关于编辑词库时的 tab 问题](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E8%AF%8D%E5%BA%93%E6%97%B6-tab-%E7%9A%84%E9%97%AE%E9%A2%98)
 - [x] [皮肤配置详解](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E7%9A%AE%E8%82%A4%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3)
-- [x] [如何启用 ` fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%60--fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
+- [x] [如何启用 ` fh` 这种特殊符号输入](https://github.com/KyleBing/rime-wubi86-jidian/wiki/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-%5B-%E7%AC%A6%E5%8F%B7-%5D-%60fh%60-%E8%BF%99%E7%A7%8D%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E8%BE%93%E5%85%A5)
 
 
+
+## 支持
+感谢 [JetBrains](https://www.jetbrains.com/?from=rime-wubi86-jidian@KyleBing) 提供的工具支持
+
+![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg?_ga=2.54620846.401568951.1648434626-301403838.1648434626)
+
+
+> **始于** 2019年02月28日
