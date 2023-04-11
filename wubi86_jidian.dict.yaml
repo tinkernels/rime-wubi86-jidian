@@ -5,6 +5,7 @@ sort: by_weight # by_weight=权重 original=原始
 import_tables: # 此处是添加用户自定义词库的地方
   - wubi86_jidian_user                # 个人私有词库
   - wubi86_jidian_extra               # 扩展词库
+#  - wubi86_jidian_extra_district      # 扩展词库 - 行政区域
 
 
 columns:    # 码表格式
@@ -3856,6 +3857,7 @@ Apple	appl
 花蝶	awja
 巫师	awjg
 花旦	awjg
+工作日	awjj		2
 节假日	awjj
 芥	awjj
 苍蝇	awjk
@@ -4675,6 +4677,7 @@ Apple	appl
 随行	bdtf
 承德	bdtf
 陦	bdtf
+承重	bdtg
 陌生	bdtg
 随处	bdth
 随和	bdtk
@@ -5151,6 +5154,7 @@ Apple	appl
 阳痿	bjut
 阳伞	bjwu
 聪明伶俐	bjww
+陀螺仪	bjwy
 隰	bjx
 阳线	bjxg
 隰	bjxo
@@ -5670,24 +5674,42 @@ Apple	appl
 陶醉	bqsg
 也可以	bsny
 阻生齿	bthw
+联动	bufc
+B站	buh
+联调	buym
+除菌	bwal
+防抖	byru
 驱蚊器	cjkk
 鸡柳	cqsq
+双机热备	csrt
 有助于	degf
 万平口	dgkk
 砂轮机	dlsm
+大爆炸	doot
 大扫除	drbw
 大手大脚	drde
+存储器	dwkk
+泰迪	dwmp
 鹌鹑蛋	dynh
 腕带	epgk
 乳酸菌	esal
 胶带	eugk
 支路	fckh
+云盒	fcwg
 志愿者	fdft
 过去式	ffaa
+寸土寸金	fffq
+坡道	fhut
 戴口罩	fklh
 违和	fntk
 过长	fpta
+无感	fqdg
 均速	fqgk
+二手车	frlg
+考官	ftpn
+考拉	ftru
+直升机	ftsm
+无意间	fuuj
 堆叠	fwcc
 无欲无求	fwff
 形容	gapw
@@ -5696,31 +5718,56 @@ Apple	appl
 天窗	gdpw
 一直以来	gfng
 球头	gfud
+一键	ggqv
+一桩	ggsy
+一键	ggqv
 一瓶	ggua
 画风	glmq
+现在	gmdh
 不粘锅	goqk
+环宇城	gpfd
 残友	gqdc
+一键登录	gqwv
 一条道走到黑	gtul
+开关机	gusm
 残疾人	guww
+不传谣	gwye
+不信谣	gwye
+不信谣，不传谣	gwyy
+末代皇帝	gwru
 上下班	hggy	1
+睡不醒	hgsg
 卡扣	hhrk
+点券	hkud
+瞻仰	hqwq
+柴犬	hxdg
+卡库	hhyl
+ 占比	hxx
+油盐不进	ifgf
 清创	igwb
 水泥路	iikh
 洒水车	iilg
+油盐	imfh
+海岸线	imxg
+消消乐	iiqi
+水电费	ijxj
 深深	ipip
 堂食	ipwy
 洒水	isii
-测速	imgk
+没事	imgk
 油焖菜	ioae
 竖屏	jcnu
 时至今日	jgwj
+电路板	jksr
 曼岛TT	jlqy
 显隐	jobq
+蚝油	jtim
 中石油	kdim
 味达美	kdug
 中石化	kdwx
 跳大绳	kdxk
 顺庆	kdyd
+啧啧	kgkg
 遗失	khrw
 哈曼卡顿	kjhg
 顺时针	kjqf	1
@@ -5728,24 +5775,33 @@ Apple	appl
 叮叮当当	kkii
 串口	kkkk	1
 叮叮咣咣	kkkk
-口臭	kkth
+品牌	kkth
 吸顶灯	ksos
 咬断	kuon
 驾驶人	lcww
+车险	lgbw
 车道	lgut	1
 辅道	lgut
 加湿器	likk
 驾考	lkft
+回正	lkgh
+轰趴馆	lkqn
 软木	lqss
+办卡	lwhh
+轮询	lwyq
 内存卡	mdhh
 贴膜	mhea
 刚发现	mngm
 几斤	mtrt
+懵圈	nalu
 剧透	ndte
+懒加载	nlfa
 心心念	nnwy
 尽可能	nsce
+尾号	ntkg
 发件人	nwww
 火腿肠	oeen
+熄屏	otnu
 米家	oype	9
 穿云箭	pftu
 定死	pggq
@@ -5753,29 +5809,46 @@ Apple	appl
 补光灯	pios
 祝福	pkpg
 祈祷	prpd
+补觉	puip
 补光	puiq
 神经衰弱	pxyx
+宿主机	pysm
 多功能	qace
 触碰	qedu		空格
 解封	qeff
 触底	qeyq
 名字	qkpb
+馅饼	qnqn
+金毛	qqtf
+银杏树	qssc
 钢丝球	qxgf
 把控	rcrp
 提示框	rfsa
 返回值	rlwf
 扩展坞	rnfq
+扭矩	rntd
 抱拳	rqud
+控制面板	rrds
 手把手	rrrt
+扳机	rrsm
+挖掘机	rrsm
 手机壳	rsfp
 热血沸腾	rtie
+手锯	rtqn	1
+手刹	rtqs
 拖拽	rtrj
+气门芯	ruan
+杜蕾斯	saad
 横屏	sanu
 SD卡	sdhh
+配戴	sgfa
 要不然	sgqd
-相送	shud
+本机	sgsm
+相关	shud
 查错	sjqa
 杨絮	snvk
+楼控	sorp
+柯基	ssad
 核酸检测	sssi
 可执行	srtf
 样例	suwg
@@ -5784,13 +5857,17 @@ SD卡	sdhh
 智齿	tdhw
 航拍	terr
 透传	tewf
+告警	tfaq
+德牧	tftr
 毛玻璃	tggy
 条形图	tglt
 笑死我了	tgtb
+得来全不费工夫	tgwf
 算式	thaa
 稀里哗啦	tjkk
 得物	tjtr
 翻翻	toto
+长宽高	tpym
 稳合	tqwg
 翻拌	toru
 版权所有	tsrd
@@ -21772,7 +21849,7 @@ SD卡	sdhh
 两岸三地	gmdf
 两三	gmdg
 再三	gmdg
-现在	gmdh
+刺破	gmdh
 瑞	gmdj
 两面	gmdm
 现成	gmdn
@@ -32141,7 +32218,6 @@ iPod	ipod
 蝇拍	jkrr
 蜗杆	jksf
 电唱机	jksm
-电路板	jksr
 蝇头	jkud
 师兄弟	jkux
 暴跳如雷	jkvf
@@ -35408,7 +35484,7 @@ iPod	ipod
 品行	kktf
 骂街	kktf
 器重	kktg
-品牌	kkth
+口臭	kkth
 患处	kkth
 品种	kktk
 嗷嗷待哺	kktk
@@ -39130,7 +39206,6 @@ km/h	kmh
 办事	lwgk
 四舍五入	lwgt
 轮班	lwgy
-界上	lwhh
 办公桌	lwhj
 界点	lwhk
 轮齿	lwhw
@@ -58584,7 +58659,7 @@ MacbookPro	mbp
 打量	rsjg
 揸	rsjg
 撢	rsjh
-手机号	rskg
+手机号	rskg	9
 打嗝	rskg
 抲	rskg
 打中	rskh
@@ -58716,8 +58791,8 @@ MacbookPro	mbp
 手套	rtdd
 扬长而去	rtdf
 揭竿而起	rtdf
-括	rtdg
 手感	rtdg
+括	rtdg
 插在	rtdh
 捀	rtdh
 挢	rtdj
@@ -61721,7 +61796,7 @@ MacbookPro	mbp
 相乘	shtu
 相符	shtw
 相系	shtx
-相关	shud
+相送	shud
 相差	shud
 相斗	shuf
 相间	shuj
@@ -67282,7 +67357,6 @@ MacbookPro	mbp
 筷子	tnbb
 乞降	tnbt
 积习难改	tncn
-知情达理	tndg
 知书达礼	tndp
 黎民百姓	tndv
 乞求	tnfi
@@ -69883,6 +69957,7 @@ TF卡	ttfhh
 头晚	udjq
 养蜂	udjt
 关照	udjv
+减号	udkg
 头号	udkg
 差距	udkh
 差遣	udkh
@@ -72292,7 +72367,6 @@ TF卡	ttfhh
 姿色	uqqc
 交角	uqqe
 交钱	uqqg
-	uqqg
 郊外	uqqh
 痑	uqqi
 盗名	uqqk
@@ -72599,7 +72673,6 @@ TF卡	ttfhh
 新军	uspl
 亲密	uspn
 新安	uspv
-闲空	uspw	1
 闲空	uspw	1
 尊容	uspw
 新禧	uspy
@@ -73297,6 +73370,7 @@ m³	uuyy		立方
 闪电	uwjn
 准星	uwjt
 冷嘲	uwkf
+净化器	uwkk
 閱	uwkq
 冷噤	uwks
 病从口入	uwkt
@@ -74871,6 +74945,7 @@ m³	uuyy		立方
 如水	vkii
 如常	vkip
 如注	vkiy
+如题	vkjg
 如是	vkjg
 刟	vkjh
 如遇	vkjm
@@ -77338,6 +77413,7 @@ m³	uuyy		立方
 倒转	wglf
 合围	wglf
 朇	wglf
+倒车	wglg
 全国	wglg
 僵	wglg
 劊	wglj
@@ -78489,6 +78565,7 @@ m³	uuyy		立方
 企业主	woyg
 伙房	woyn
 傅粉施朱	woyr
+企业文化	woyw
 侬	wp
 餞	wpaa
 饃	wpad
@@ -80705,6 +80782,7 @@ m³	uuyy		立方
 儫	wype
 信守	wypf
 仿赛	wypf
+会议室	wypg
 人迹罕至	wypg
 今宵	wypi
 领军	wypl
@@ -81199,6 +81277,7 @@ m³	uuyy		立方
 绌	xbmh
 絀	xbmh
 弛	xbn
+XBox	xbox
 红卫兵	xbrg
 经院哲学	xbri
 继承权	xbsc
@@ -83966,6 +84045,7 @@ m³	uuyy		立方
 诬枉	yasg
 试想	yash
 讴歌	yask
+高斯模糊	yaso
 试样	yasu
 谋私	yatc
 试航	yate
@@ -84868,6 +84948,7 @@ m³	uuyy		立方
 证书	ygnn
 瓬	ygnn
 评改	ygnt
+主屏	ygnu
 言不尽意	ygnu
 放下屠刀	ygnv
 主业	ygog
@@ -85370,6 +85451,7 @@ m³	uuyy		立方
 齐物	yjtr
 课税	yjtu
 蚉	yju
+充电头	yjud
 良师益友	yjud
 课前	yjue
 变电站	yjuh
@@ -85651,6 +85733,7 @@ m³	uuyy		立方
 高	ym
 高工	ymaa
 调节	ymab
+高斯	ymad
 设若	ymad
 譨	ymae
 高雅	ymah
@@ -86376,6 +86459,7 @@ m³	uuyy		立方
 肇庆	ynyd
 谈情说爱	ynye
 扆	ynye
+房主	ynyg
 词语	ynyg
 雇主	ynyg
 户主	ynyg
@@ -87160,6 +87244,7 @@ m³	uuyy		立方
 麻醉剂	ysyj
 订户	ysyn
 磨床	ysys
+摩旅	ysyt
 订座	ysyw
 魔方	ysyy
 訹	ysyy
@@ -87310,8 +87395,8 @@ Windows	wind
 詻	ytkg
 诈唬	ytkh
 放哨	ytki
-计程器	ytkk
 计算器	ytkk
+计程器	ytkk
 话别	ytkl
 话务员	ytkm
 谢罪	ytld
